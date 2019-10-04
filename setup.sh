@@ -1,6 +1,6 @@
 curl -s https://install.zerotier.com | sudo bash
 sudo zerotier-cli join $1
-wget -q https://git.io/voEUQ -O /tmp/raspap && bash /tmp/raspap
+wget -q https://git.io/voEUQ -O /tmp/raspap && bash /tmp/raspap --yes
 sudo sed -i 's/WifiAPEnable = 0/WifiAPEnable = 1/g' /etc/raspap/hostapd.ini
 sudo sed -i 's/ssid=raspi-webgui/ssid=FBI Surveillance Van/g' /etc/hostapd/hostapd.conf
 sudo sed -i 's/wpa_passphrase=ChangeMe/wpa_passphrase=12345678/g' /etc/hostapd/hostapd.conf
